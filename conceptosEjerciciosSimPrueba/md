@@ -1,0 +1,21 @@
+Exercici 1 — Filtre d'Emails Vàlids
+Crea una aplicació gràfica que llegeixi un fitxer de text amb una llista d'adreces de correu electrònic (una per línia). El programa ha de classificar-les en "vàlides" i "no vàlides" i permetre desar les vàlides. Un email es considera vàlid si conté exactament un @, té almenys un caràcter abans del @, i conté un . després del @. Mateixa estructura de GUI que l'examen: dos JTextField per rutes, dos JTextArea amb scroll, botó "Analitzar" i botó "Desar" (inicialment inactiu).
+
+Exercici 2 — Classificador de Notes
+Llegeix un fitxer on cada línia té el format NomAlumne;Nota (per exemple, Maria;7.5). Classifica els alumnes en dues àrees de text: "Aprovats" (nota >= 5) i "Suspesos" (nota < 5). El botó "Desar" ha de guardar només els aprovats al fitxer de destí. Gestiona errors com línies mal formatejades o fitxer inexistent amb JOptionPane.
+
+Exercici 3 — Comptador de Paraules Llargues
+Llegeix un fitxer de text i mostra a una JTextArea totes les paraules que tenen 6 o més caràcters (sense repetir). A una segona JTextArea, mostra les paraules curtes (menys de 6 caràcters). Afegeix un JLabel a cada àrea que mostri el recompte total. El botó "Desar" escriu les paraules llargues al fitxer de destí, una per línia.
+
+Exercici 4 — Filtre de Números Parells i Senars
+Un fitxer conté un número enter per línia. L'aplicació ha de llegir-lo, separar els parells dels senars en dues JTextArea, i permetre desar només els parells. Si una línia no conté un número vàlid, s'ha d'ignorar i comptar com a "error". Mostra el total d'errors en un JLabel.
+
+
+
+FiltroEmails.java — Lee emails de un fichero y los clasifica en válidos/no válidos según si tienen un @ con texto antes y un . después.
+
+ClasificadorNotas.java — Lee líneas con formato Nombre;Nota, separa aprobados de suspensos, y gestiona líneas mal formateadas con JOptionPane.
+
+ContadorPalabras.java — Separa palabras largas (≥6 letras) de cortas, eliminando repetidas, y muestra el recuento en JLabels.
+
+FiltroNumeros.java — Clasifica números enteros en pares e impares, cuenta las líneas que no son números válidos y muestra el total de errores.
